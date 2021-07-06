@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link href="style.css" rel="stylesheet">
+<title>Counter</title>
+<meta charset="utf-8">
+</head>
+<body>
+  <script type="text/javascript">
+    function seleziona(i){
+    i = i||1;
+    var e = document.getElementById("result");
+    e.innerHTML = (0,+e.innerHTML+i);
+    }
+
+    </script>
+  <div class="container main_box">
+<button class="btn counter" onClick="seleziona()" id="selectbutton">+</button>
+<label id="result"> 0 </label>
+<button class="btn counter" onClick="seleziona(-1)">-</button>
+</div>
+</body>
+</html>
